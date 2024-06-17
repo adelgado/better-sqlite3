@@ -124,14 +124,14 @@ void SetPrototypeGetter (v8::Isolate * isolate, v8::Local <v8::External> data, v
 #line 148 "./src/util/macros.lzz"
   {
         v8::HandleScope scope(isolate);
-        recv->InstanceTemplate()->SetAccessor(
-                InternalizedFromLatin1(isolate, name),
-                func,
-                0,
-                data,
-                v8::AccessControl::DEFAULT,
-                v8::PropertyAttribute::None
-        );
+        // recv->InstanceTemplate()->SetAccessor(
+        //         InternalizedFromLatin1(isolate, name),
+        //         func,
+        //         0,
+        //         data,
+        //         v8::AccessControl::DEFAULT,
+        //         v8::PropertyAttribute::None
+        // );
 }
 #line 4 "./src/util/constants.lzz"
 v8::Local <v8::String> CS::Code (v8::Isolate * isolate, int code)
